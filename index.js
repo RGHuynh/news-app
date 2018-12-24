@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 4000;
 
 app.use(cors({origin: true}));
 
@@ -9,7 +8,8 @@ app.get('/', (req, resp, next) => {
     resp.send('Hello World');
 });
 
-console.log('you are now in port 4000');
-
-app.listen(PORT);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`Mixing it up on port ${PORT}`);
+});
 
