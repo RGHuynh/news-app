@@ -8,7 +8,10 @@ let service = {
 }
 
 function getNews(params) {
-    return axios.get("https://newsapi.org/v2/everything?" + params);
+    return (axios.get("https://newsapi.org/v2/everything?" + params)
+        .then(response => {
+            return response
+        }))
 }
 
 function setParams(req) {
@@ -25,7 +28,6 @@ function setParams(req) {
 }
 
 function setURL(params) {
-    let url = "https://newsapi.org/v2/everything?";
     let paramaters = [];
     for(let key in params) {    
         paramaters.push(key + "=" + params[key])
@@ -34,7 +36,7 @@ function setURL(params) {
         }
     }
     let paramaterString = paramaters.join('')
-    return (url + paramaterString);
+    return (paramaterString);
 }
 
 module.exports = service;
