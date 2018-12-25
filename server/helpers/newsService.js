@@ -15,10 +15,9 @@ function setParams(req) {
     let params = {
         q: '',
         from: '',
-        sortBY: '',
+        sortBy: '',
         apiKey: process.env.NEWS_API
     };
-
     for(let param in params) {
         params[param] = req[param];
     }
