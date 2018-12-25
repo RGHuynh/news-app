@@ -2,12 +2,12 @@ const axios = require('axios');
 require('dotenv').config();
 
 let service = {
-    getNews: getNews,
+    getNewsArticle: getNewsArticle,
     setParams: setParams,
     setURL: setURL
 }
 
-function getNews(params) {
+function getNewsArticle(params) {
     return (axios.get("https://newsapi.org/v2/everything?" + params)
         .then(response => {
             return response

@@ -40,5 +40,5 @@ describe('#getNews', () => {
         const url = newsService.setURL(paramaters);
         const result = await newsService.getNews(url);
         expect(result.status).to.be.eq(200)
-    })
-})
+    });
+});
