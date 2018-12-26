@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './index.css';
 import Navigation from '../../navigations';
 import Header from '../../header';
 import TopPick from '../../topPick';
+import axios from 'axios';
 
-export default function Landing() {
-    return(
-        <main>
-            <Navigation />
-            <Header />
-            <TopPick />
-        </main>
-    )
+export default class Landing extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            author: '',
+            title: '',
+            subTitle: '',
+            article: ''
+        }
+    }
+
+    render(){
+        return(
+            <main>
+                <Navigation />
+                <Header />
+                <TopPick />
+            </main>
+        );
+
+    }
 }
