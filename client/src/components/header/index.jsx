@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../pictures/background.svg'
+import Background from '../../pictures/background.svg';
 import './index.css';
 
 export default function Header() {
