@@ -14,19 +14,21 @@
 .author-wrapper {
     padding-top: 30px;
 }
-.author {
+
+.author, .subtitle, .btn__design {
     font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .title-wrapper {
-    /* width: 51vw; */
     max-width: 500px;
     margin: auto;
-    padding-top: 1.5rem;
+    padding-top: 1.4rem;
 }
 
 .title {
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .subtitle-wrapper {
@@ -35,11 +37,15 @@
     margin: auto;
     padding-top: 1.3rem;
 }
-.subtitle {
-    font-size: 1rem;
-
-}
 
 .btn-wrapper {
     padding-top: 1.2rem;
+}
+
+.btn__design {
+    background-color: #ff4349;
+    color: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0;
 }

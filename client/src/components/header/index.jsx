@@ -17,7 +17,7 @@ export default function Header() {
                         <h2 className="subtitle">Lore dkfjlk dlfkjlk slkfj dfjkl</h2>
                     </div>
                     <div className="btn-wrapper">
-                        <button className="btn btn-primary">Read More</button>
+                        <button className="btn btn__design">Read More</button>
                     </div>
                 </div>
                 <div></div>
