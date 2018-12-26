@@ -4,7 +4,7 @@ import './index.css';
 export default function Header() {
     return(
         <header className="masthead">
-            <div className="container">
+            <div className="masthead-container">
                 <div className="newsBio-container">
                     <div className="author-wrapper">
                         <h1 className="author">Samantha</h1>
@@ -15,7 +15,9 @@ export default function Header() {
                     <div className="subtitle-wrapper">
                         <h2 className="subtitle">Lore dkfjlk dlfkjlk slkfj dfjkl</h2>
                     </div>
-                    <button className="btn btn-primary">Read More</button>
+                    <div className="btn-wrapper">
+                        <button className="btn btn-primary">Read More</button>
+                    </div>
                 </div>
                 <div></div>
             </div>

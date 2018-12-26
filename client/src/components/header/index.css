@@ -1,0 +1,43 @@
+.masthead {
+    border: 1px solid black;
+    height: 500px;
+}
+
+.masthead-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.author-wrapper {
+    padding-top: 30px;
+}
+.author {
+    font-size: .8rem;
+}
+
+.title-wrapper {
+    /* width: 51vw; */
+    max-width: 500px;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle-wrapper {
+    width: 300px;
+    max-width: 400px;
+    margin: auto;
+    padding-top: 1.3rem;
+}
+.subtitle {
+    font-size: 1rem;
+
+}
+
+.btn-wrapper {
+    padding-top: 1.2rem;
+}
