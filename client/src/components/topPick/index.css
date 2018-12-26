@@ -9,6 +9,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.articles-container {
+    display: flex;
+}
+
+.article-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 .article-image-wrapper {
     border: 1px solid black;
     height: 250px;
