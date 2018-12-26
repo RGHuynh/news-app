@@ -1,5 +1,4 @@
 .masthead {
-    border: 1px solid black;
     height: 500px;
 }
 
@@ -7,6 +6,9 @@
     display: flex;
     justify-content: center;
     padding-top: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .author-wrapper {

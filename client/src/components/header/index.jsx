@@ -1,10 +1,11 @@
 import React from 'react';
+import Background from '../../pictures/background.svg'
 import './index.css';
 
 export default function Header() {
     return(
         <header className="masthead">
-            <div className="masthead-container">
+            <div className="container masthead-container" style={{backgroundImage: `url(${Background})`}}>
                 <div className="newsBio-container">
                     <div className="author-wrapper">
                         <h1 className="author">Samantha</h1>
