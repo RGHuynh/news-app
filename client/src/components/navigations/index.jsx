@@ -1,11 +1,14 @@
 import React from 'react';
 import './index.css';
+import Logo from '../../pictures/logo.svg';
 
 export default function Navigation() {
     return(
-        <nav className="navbar border">
+        <nav className="navbar">
             <div className="container">
-                <a className="navbar-brand">NEWS</a>
+                <a className="navbar-brand">
+                    <img className="logo-wrapper" src={Logo} />
+                </a>
             </div>
         </nav>
     )
