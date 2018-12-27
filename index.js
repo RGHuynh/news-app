@@ -8,9 +8,9 @@ app.use(cors({origin: true}));
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// app.get('/', (req, resp, next) => {
-//     resp.send('Hello World');
-// });
+app.get('/', (req, resp, next) => {
+    resp.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 app.get('/news', async (req, resp, next) => {
     let result = await controllers.news.getNews(req.query);
