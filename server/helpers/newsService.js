@@ -24,7 +24,9 @@ function setParams(req) {
         apiKey: process.env.NEWS_API
     };
     for(let param in params) {
-        params[param] = req[param];
+        if(param != apiKey) {
+            params[param] = req[param];
+        }
     }
     return params;
 }
