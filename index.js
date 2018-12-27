@@ -5,7 +5,7 @@ const controllers = require('./server/controllers')
 
 app.use(cors({origin: true}));
 
-app.use(express.static(path.join(__dirname, 'cliend/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // app.get('/', (req, resp, next) => {
 //     resp.send('Hello World');
