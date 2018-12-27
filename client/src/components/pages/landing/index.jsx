@@ -20,8 +20,10 @@ export default class Landing extends Component {
         return(
             <main>
                 <Navigation />
-                <Header />
-                <TopPick />
+                <div className="mastBody">
+                    <Header />
+                    <TopPick />
+                </div>
             </main>
         );
 

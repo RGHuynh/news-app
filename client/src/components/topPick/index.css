@@ -2,6 +2,8 @@
     height: 100%;
     background-size: cover;
     padding-top: 5rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .body-parag, .article-descript, .article-arthur {
@@ -10,7 +12,9 @@
 }
 
 .articles-container {
+    width: 100%;
     display: flex;
+    overflow-x: scroll
 }
 
 .article-container {
@@ -35,4 +39,10 @@
 .article-arthur {
     text-align: left;
 
+}
+
+@media (min-width: 575px) {
+    .toppick-container {
+        padding-top: 7rem;
+    }
 }

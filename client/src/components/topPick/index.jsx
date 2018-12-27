@@ -34,6 +34,16 @@ export default function TopPick() {
                             <h6 className="article-arthur">authorname</h6>
                         </div>
                     </div>
+                    <div className="article-container">
+                        <div className="article-image-wrapper">
+                        </div>
+                        <div className="article-descript-wrapper">
+                            <p className="article-descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div className="article-arthur-wrapper">
+                            <h6 className="article-arthur">authorname</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </article>
