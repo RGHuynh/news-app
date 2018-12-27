@@ -1,7 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const controllers = require('./server/controllers')
+const controllers = require('./server/controllers');
+const path = require('path');
 
 app.use(cors({origin: true}));
 
