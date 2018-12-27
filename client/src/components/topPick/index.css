@@ -6,7 +6,7 @@
     padding-right: 0 !important;
 }
 
-.body-parag, .article-descript, .article-arthur {
+.body-parag, .article-descript, .article-author {
     font-size: .8rem;
     font-family: 'Roboto', sans-serif;
 }
@@ -17,29 +17,7 @@
     overflow-x: scroll
 }
 
-.article-container {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
 
-.article-image-wrapper {
-    border: 1px solid black;
-    height: 250px;
-}
-
-.article-descript-wrapper, .article-image-wrapper, .article-arthur-wrapper  {
-    width: 170px;
-}
-
-.article-descript {
-    text-align: left;
-    font-weight: bold;
-}
-
-.article-arthur {
-    text-align: left;
-
-}
 
 @media (min-width: 575px) {
     .toppick-container {
