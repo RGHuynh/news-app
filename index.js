@@ -5,9 +5,11 @@ const controllers = require('./server/controllers')
 
 app.use(cors({origin: true}));
 
-app.get('/', (req, resp, next) => {
-    resp.send('Hello World');
-});
+app.use(express.static(path.join(__dirname, 'cliend/build')));
+
+// app.get('/', (req, resp, next) => {
+//     resp.send('Hello World');
+// });
 
 app.get('/news', async (req, resp, next) => {
     let result = await controllers.news.getNews(req.query);
