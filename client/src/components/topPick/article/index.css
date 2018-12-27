@@ -1,0 +1,24 @@
+.article-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.article-image-wrapper {
+    border: 1px solid black;
+    height: 250px;
+    overflow: hidden;
+}
+
+.article-descript-wrapper, .article-image-wrapper, .article-arthur-wrapper  {
+    width: 170px;
+}
+
+.article-descript {
+    text-align: left;
+    font-weight: bold;
+}
+
+.article-author {
+    text-align: left;
+
+}

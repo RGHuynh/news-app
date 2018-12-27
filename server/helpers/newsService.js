@@ -7,10 +7,12 @@ let service = {
     setURL: setURL
 }
 
+/////
+
 function getNewsArticle(params) {
     return (axios.get("https://newsapi.org/v2/everything?" + params)
         .then(response => {
-            return response
+            return response;
         }))
 }
 

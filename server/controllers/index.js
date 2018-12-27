@@ -12,4 +12,5 @@ fs.readdirSync(pathBasename).forEach((file) => {
     }    
 })
 
+console.log(controllerObj);
 module.exports = controllerObj;
