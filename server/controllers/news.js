@@ -9,7 +9,7 @@ exports.getNews = async function(req, res, next) {
         let news = await newsService.getNewsArticle(urlParams);
         let unsplash = await unsplashService.getImage(req);
 
-        result["news"] = news;
+        result["news"] = news.data;
         result["unsplash"] = unsplash;
         return result
     } catch(error) {
