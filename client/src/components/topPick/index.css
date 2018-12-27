@@ -1,0 +1,48 @@
+.toppick-container {
+    height: 100%;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.body-parag, .article-descript, .article-arthur {
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.articles-container {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll
+}
+
+.article-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.article-image-wrapper {
+    border: 1px solid black;
+    height: 250px;
+}
+
+.article-descript-wrapper, .article-image-wrapper, .article-arthur-wrapper  {
+    width: 170px;
+}
+
+.article-descript {
+    text-align: left;
+    font-weight: bold;
+}
+
+.article-arthur {
+    text-align: left;
+
+}
+
+@media (min-width: 575px) {
+    .toppick-container {
+        padding-top: 7rem;
+    }
+}
