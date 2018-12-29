@@ -15,16 +15,16 @@ export default class TopPick extends Component {
     }
 
     getArticles() {
-        axios.get('https://newsapi.org/v2/everything', {
+        axios.get('https://gentle-thicket-67528.herokuapp.com/news', {
             params: {
                 q: 'bitcoin',
                 from: '2018-12-24',
-                sortBy: 'publishedAt',
-                // api_key
+                sortBy: 'publishedAt'
             }
         })
         .then((resp) => {
-            this.setState({articles: resp.data.articles})
+            console.log(resp.data.news.articles)
+            this.setState({articles: resp.data.news.articles})
         })
     }
 
