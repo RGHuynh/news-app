@@ -5,6 +5,7 @@ import Header from '../../header';
 import TopPick from '../../topPick';
 import axios from 'axios';
 
+
 export default class Landing extends Component {
     constructor(props) {
         super(props);
@@ -19,20 +20,20 @@ export default class Landing extends Component {
     }
 
     getNews() {
-        axios.get('https://newsapi.org/v2/everything', {
+        axios.get('https://gentle-thicket-67528.herokuapp.com/news', {
             params: {
                 q: 'bitcoin',
                 from: '2018-12-24',
                 sortBy: 'publishedAt'
-                // api_key
-            }
+            }            
         }).then((resp) => {
-            console.log(resp.data.articles)
+            console.log(resp.data.news.articles[0])
+            let article = resp.data.news.articles[0]
             this.setState({
-                author: resp.data.articles[0].author,
-                title: resp.data.articles[0].title,
-                subTitle: resp.data.articles[0].description,
-                article: resp.data.articles[0].content,
+                author: article.author,
+                title: article.title,
+                subTitle: article.description,
+                article: article.content,
             })
         })
     }
